@@ -36,7 +36,7 @@
         </div>
         <%= simple_form_for Quote.new do |f| %>
         <div class="modal-body">      
-            <%= f.input :saying, :label => "What is the quote you want to add?", :placeholder => 'Daddy did biiiiig pooop!'  %>
+            <%= f.input :saying, :label => "What is the quote you'd like to attribute to Adam? :-P", :placeholder => 'Daddy did biiiiig pooop!'  %>
             <br />
             <%= f.input :author, :label => "What is your name?", :placeholder => 'Rehan'  %>
         </div>
@@ -65,7 +65,6 @@
 <div class="container quotebody">
   <%= yield %>
 </div>
-
 
 <div class="footer">
   <div class="container">
