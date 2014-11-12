@@ -2,35 +2,17 @@
 	clear: both;
 }
 
-.circle {
-    font-weight:bold;
-    font-style: italic;
-    position: relative;
-    border-radius: 100%;
-    background: #f84342;
-    border: 1px solid #F7F7F7;
-    width: 80px;
-    height: 80px;
-    margin: 10px 10px;
-    text-align: center;
-    color: #FFF;
-    font-size: 10px;
-    line-height: 16px;
-    cursor: pointer;
-    transform:rotate(11deg);
-    -ms-transform:rotate(11deg); /* IE 9 */
-    -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
-}
-
 .slogan {
   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
   font-style: italic;
-  padding-top: 26px;
+  padding-top: 35px;
 }
 
 
 .links {
-  padding-top:26px;
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;	
+  	padding-top:26px;
+  	text-align: right;
 }
 
 .links a {
@@ -39,35 +21,40 @@
   border-bottom: 1px solid #dfdfdf;
 }
 
+image {
+	border: 0;
+}
 
 header {
-  border-top: 9px solid #222222;
-  font-family: 'sf_cartoonist_handregular', sans-serif;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  background: #e2adad;
+  height: 100px;
 }
 
 hr {
-	border-color: #ff0000;
   	clear:both;
 }
 
 h1 {
-	font-family: 'sf_cartoonist_handregular', sans-serif;
-	font-size: 48px;
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+	font-size: 38px;
+	color: #e0d7da;
 }
 
 h2 {
-	font-family: 'sf_cartoonist_handregular', sans-serif;
-	font-size: 36px;
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+	font-size: 26px;
+	color: #e0d7da;
 }
 
 .next-quote {
-	font-family: 'sf_cartoonist_handregular', sans-serif;	
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 	color: #f84342;
 	font-size: 15px;
 }
 
 .footer-blurb {
-	font-family: 'sf_cartoonist_handregular', sans-serif;
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 	text-align: right;
 	font-size: 15px;
 }
@@ -77,22 +64,46 @@ h2 {
 }
 
 .about, .modal {
-	font-family: 'sf_cartoonist_handregular', sans-serif;
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 	font-size: 20px;
-}
-
-@media (max-width: 750px) {
-  .footer-blurb {
-    text-align: left;
-  }
 }
 
 h2 span {
   color: #918e90;
-  font-family: 'sf_cartoonist_handregular', sans-serif;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
   padding-top: 26px;
 }
 
 ::selection {
-  background-color: #f84342;
+	background-color: #f84342;
+}
+
+body {
+	background-image: url(adam_sunset.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;	
+	background-size: cover;
+}
+
+.quotebody {
+	background: black;
+	width: 40%;
+	float: right;
+	margin-right: 30px;
+}
+
+
+@media (max-width: 750px) {
+	.footer-blurb {
+	    text-align: left;
+	}
+
+	.quotebody {
+		width: 90%;
+		float: center;		
+	}
 }

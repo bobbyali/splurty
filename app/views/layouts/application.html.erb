@@ -9,19 +9,12 @@
 <body>
 
   <header>
-    <div class="col-xs-3">
+    <div class="col-xs-2">
       <%= link_to root_path, :class => 'logo' do %>
-      <div class="circle">
-          <br />
-          YOLO
-          <br />
-          LOL
-          <br />
-          OMG
-      </div>
+      <%= image_tag "logo.png" %>
       <% end %>      
     </div>
-    <div class="col-sm-4 hidden-xs slogan">
+    <div class="col-sm-5 hidden-xs slogan">
       A funny quote a day from my favourite little boy...
     </div>
     <div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
@@ -57,12 +50,6 @@
   </div>
 
 
-
-
-
-
-<hr />
-
 <br class="clear" />
 
 <div class="container">
@@ -75,7 +62,7 @@
 </div>
 
 <br class="clear" />
-<div class="container">
+<div class="container quotebody">
   <%= yield %>
 </div>
 
