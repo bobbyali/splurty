@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
@@ -43,3 +45,9 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Heroku wanted this gem:
+#   WARNING:
+#   Include 'rails_12factor' gem to enable all platform features
+#   See https://devcenter.heroku.com/articles/rails-integration-gems for more information.
+gem 'rails_12factor'
