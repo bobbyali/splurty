@@ -1,6 +1,9 @@
 class QuotesController < ApplicationController
   def index
     @quote = Quote.order("RANDOM()").first
+    
+    @quote[:saying] = @quote[:saying].gsub(/ [A-Z][a-z]+:/, "<br/> - \\0")
+    
   end
 
   def create
