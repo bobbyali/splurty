@@ -51,3 +51,7 @@ end
 #   Include 'rails_12factor' gem to enable all platform features
 #   See https://devcenter.heroku.com/articles/rails-integration-gems for more information.
 gem 'rails_12factor'
+
+gem 'bootstrap-sass', '~> 3.3.0'
+gem 'autoprefixer-rails'
+
