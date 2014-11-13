@@ -1,29 +1,25 @@
-.clear {
-	clear: both;
+/* Primary stylesheet for adamand.me 
+
+	Organisation:
+
+		Tag-level (e.g. body, h1)
+		Class-level 
+		Mobile-level
+		Behaviour-level (e.g. selection)
+*/
+
+/* === TAG-LEVEL STYLES === */
+body {
+	background-image: url(adam_sunset.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;	
+	background-size: cover;
 }
 
-.slogan {
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-  font-style: italic;
-  padding-top: 35px;
-}
-
-
-.links {
-	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;	
-  	padding-top:26px;
-  	text-align: right;
-}
-
-.links a {
-  color:black;
-  font-size: 25px;
-  border-bottom: 1px solid #dfdfdf;
-}
-
-image {
-	border: 0;
-}
 
 header {
   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
@@ -47,15 +43,38 @@ h2 {
 	color: #e0d7da;
 }
 
+h2 span {
+  color: #918e90;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  padding-top: 26px;
+}
+
+/* === CLASS-LEVEL STYLES === */
+.clear {
+	clear: both;
+}
+
+.slogan {
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-style: italic;
+  padding-top: 35px;
+}
+
+.links {
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;	
+  	padding-top:26px;
+  	text-align: right;
+}
+
+.links a {
+  color:black;
+  font-size: 25px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
 .next-quote {
 	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 	color: #f84342;
-	font-size: 15px;
-}
-
-.footer-blurb {
-	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-	text-align: right;
 	font-size: 15px;
 }
 
@@ -72,27 +91,6 @@ h2 {
 	color: #e0d7da;
 }
 
-h2 span {
-  color: #918e90;
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-  padding-top: 26px;
-}
-
-::selection {
-	background-color: #f84342;
-}
-
-body {
-	background-image: url(adam_sunset.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;	
-	background-size: cover;
-}
-
 .quotebody {
 	background: black;
 	width: 40%;
@@ -101,7 +99,13 @@ body {
 	margin-bottom: 100px;
 }
 
+.footer-blurb {
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+	text-align: right;
+	font-size: 15px;
+}
 
+/* === MOBILE-SPECIFIC STYLES === */
 @media (max-width: 750px) {
 	.footer-blurb {
 	    text-align: left;
@@ -111,4 +115,9 @@ body {
 		width: 90%;
 		float: center;		
 	}
+}
+
+/* === BEHAVIOUR-SPECIFIC STYLES === */
+::selection {
+	background-color: #f84342;
 }
