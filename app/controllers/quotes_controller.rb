@@ -18,6 +18,17 @@ class QuotesController < ApplicationController
   end
 
 
+  def about
+  end
+
+  def show
+    #@quote = Quote.find(params[:id])
+    @quote = Quote.where(:id => params[:id]).first
+    if @quote.blank?
+      render :text => "Not Found", :status => :not_found
+    end
+  end
+
   private
 
     # safely handle input form fields
@@ -25,7 +36,5 @@ class QuotesController < ApplicationController
       params.require(:quote).permit(:saying, :author)
     end
 
-    def about
-    end
-
+    
 end
