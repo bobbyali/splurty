@@ -57,3 +57,4 @@ gem 'autoprefixer-rails'
 
 gem 'simple_form'
 
+gem 'factory_girl_rails', '~> 4.0'
